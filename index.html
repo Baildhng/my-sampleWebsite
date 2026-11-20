@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Company Profile</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/img/icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/icon.png" alt="">
+        <h2 class="sitename">DHANG PRETTY</h2>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+            
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <!-- <img src="assets/img/bg.jpg" alt="" class="hero-bg">      -->
+      <div class="hero-bg-container">
+        <img src="assets/img/bg.jpg" alt="Background Image 1" class="hero-bg" id="bg1">
+        <img src="assets/img/bg2.jpg" alt="Background Image 2" class="hero-bg" id="bg2">
+        <img src="assets/img/bg3.jpg" alt="Background Image 2" class="hero-bg" id="bg3">
+        <img src="assets/img/bg4.jpg" alt="Background Image 2" class="hero-bg" id="bg4">
+      </div>
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+
+          <div class="col-lg-8  d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1 id="typing-text"> Hello! This is Dhang Portfolio </h1>
+            <p>" I may carry the weight of my family’s responsibilities, but I will never give up on my own dreams. 
+              I am a strong, independent woman who works hard, loves deeply, and keeps moving forward no matter how difficult life gets.❤️ "</p>
+            <div class="d-flex">
+              <!-- <a href="#about" class="btn-get-started">Read More..</a> -->
+              <a href="https://youtu.be/jgd-WR0FqTw" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="assets/js/text-animated.js"></script>
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+    </section><!-- /Hero Section -->
+
+    <script>
+      let currentIndex = 0;
+      const bgImages = document.querySelectorAll('.hero-bg');
+      function switchBackground() {
+        bgImages[currentIndex].classList.remove('active'); // Remove active class from current image
+        currentIndex = (currentIndex + 1) % bgImages.length; // Move to the next image
+        bgImages[currentIndex].classList.add('active'); // Add active class to the next image
+      }
+      // Initially show the first background
+      bgImages[currentIndex].classList.add('active');
+      // Change the background every 5 seconds
+      setInterval(switchBackground, 5000);
+    </script>
+    
+    
+ <!-- About Section -->
+ <section id="about" class="about section">
+
+  <div class="container">
+
+    <div class="row position-relative">
+
+      <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="100"><img src="assets/img/mp.png"></div>
+
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="inner-title">WHO IS DENNA?</h2>
+        <div class="our-story">
+          <h4>December 14, 2000</h4>
+          <!-- <h3>Our Story</h3> -->
+           <ul>
+            <li><i class="bi bi-check-circle"></i> <span>Breadwinner Daughter ng Pangasinan</span></li>
+          </ul>
+          <p>I am an independent and hardworking woman who values family, responsibility, and personal growth. 
+            As a breadwinner, I have learned to be strong, responsible, and determined in facing life's challenges. 
+            I believe that hard work, patience, and faith are the keys to achieving my dreams. 
+            My goal is to build a better future for myself and my loved ones while continuing to grow as a person.</p>
+          <p>
+    <BR>I always strive to learn new things, improve my skills, and become a better version of myself. 
+      Despite the challenges I face, I remain positive, motivated, and committed to achieving my goals in life.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-emoji-smile"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Friends</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Siblings</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <!-- <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-headset"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>End Stats Item -->
+
+          <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-people"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="107" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Place Visited</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+      </div>
+    </section><!-- /Stats Section -->
+
+       
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="assets/img/testimonials-bg.gif" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/image1.jpg" class="testimonial-img" alt="">
+                <h3>Strong and Independent</h3>
+                
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>People see me as someone who can handle challenges, stand on my own, and remain strong even during difficult times</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/image2.jpg" class="testimonial-img" alt="">
+                <h3>Family-Oriented</h3>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Others expect me to remain dedicated to my family, fulfill my responsibilities, and always give my best in everything I do.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/image3.jpg" class="testimonial-img" alt="">
+                <h3>Hardworking</h3>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>People expect me to be hardworking, trustworthy, and determined to succeed despite the challenges and obstacles I encounter.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/image4.png" class="testimonial-img" alt="">
+                <h3>Personal Growth</h3>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Others expect me to continue improving myself, making wise decisions, and building a successful future.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Frequently Asked Questions</span><strong> About Me.</strong></h3>
+              
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Are you an introvert or an extrovert?</h3>
+                <div class="faq-content">
+                  <p>I can be quiet and reserved around new people, but once I feel comfortable, I become talkative and friendly. 
+                    I enjoy spending time with others, but I also appreciate having time for myself to recharge and reflect.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Favorite Color?</h3>
+                <div class="faq-content">
+                  <p>I LOVE BLACK AND KHAKI COLOR.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What makes you happy?</h3>
+                <div class="faq-content">
+                  <p>Spending time with my loved ones, achieving small goals, learning new things, and seeing my hard work pay off.  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What motivates you in life?</h3>
+                <div class="faq-content">
+                  <p>My family, personal dreams, and the desire to build a better future motivate me to keep going despite life's challenges. </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="assets/img/faq.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">2026</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by Dhang
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
